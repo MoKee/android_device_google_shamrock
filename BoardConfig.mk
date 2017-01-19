@@ -45,7 +45,7 @@ TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/google/shamrock
-TARGET_KERNEL_CONFIG := lineageos_shamrock_defconfig
+TARGET_KERNEL_CONFIG := mokee_shamrock_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
 
@@ -84,9 +84,9 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_HAL_STATIC_LIBRARIES += libhealthd.msm8952
 BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(DEVICE_PATH)/charger/images
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
+# MKHW
+BOARD_USES_MOKEE_HARDWARE := true
+BOARD_HARDWARE_CLASS += hardware/mokee/mkhw
 
 # CNE
 BOARD_USES_QCNE := true
